@@ -1,18 +1,13 @@
 <template>
   <header>
     
-   
-    <nav>
-      <ul>
-      <li><RouterLink to="/" class="text-blue-600 underline">Accueil</RouterLink></li>
-      <li><RouterLink to="/Mentions" class="text-blue-600 underline">Mentions Légale</RouterLink></li>
-      </ul>
-    </nav>
+   <h1>Gououte</h1>
+  
   </header>
 
  
 
-  <RouterView />
+
 </template>
 
 <script>
