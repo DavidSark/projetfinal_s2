@@ -5,7 +5,7 @@ import ÀproposView from '../views/ÀproposView.vue'
 import PassView from '../views/PassView.vue'
 import FilDiscussionView from '../views/FilDiscussionView.vue'
 import TchatView from '../views/TchatView.vue'
-import AperçuAideView from '../views/AperçuView.vue'
+import AperçuAideView from '../views/AperçuAideView.vue'
 import DemandeAideView from '../views/DemandeAideView.vue'
 import MentionsView from '../views/MentionsView.vue'
 
