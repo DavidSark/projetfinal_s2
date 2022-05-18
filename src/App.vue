@@ -1,6 +1,7 @@
 <template>
   <div class="h-screen w-screen overflow-x-hidden bg-gradient-to-b from-baby-blue to-blue-electric">
     <header>
+      <img src="..../images/menuicon.png" alt="" />
       <h1 class="p-24 text-center font-quicksand text-2xl uppercase tracking-widest text-white">Mentions légales</h1>
     </header>
     <div class="rounded-3xl bg-white font-raleway text-dark-black">
