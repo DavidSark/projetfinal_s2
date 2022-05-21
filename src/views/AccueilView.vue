@@ -5,8 +5,8 @@
     </div>
 
     <div class="mb-8 text-center font-quicksand text-white">
-      <p class="text-xl">Ravie de te revoir !</p>
-      <p class="text-sm text-gris">Demandes restantes : 3</p>
+      <p class="text-xl">Bienvenue sur Askme !</p>
+      <p class="text-sm text-gris">Tagline?</p>
     </div>
 
     <div class="text-center">

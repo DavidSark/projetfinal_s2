@@ -1,8 +1,8 @@
 <template>
   <div class="mx-4 flex h-16 flex-row-reverse items-center rounded-xl drop-shadow-xl justify-between bg-white">
     <IconeProfile class="w-14"></IconeProfile>
-    <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <FlecheDroit class="w-12"></FlecheDroit>
+    <p class="text-xs text-raleway">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <RouterLink to="/connexion"><FlecheDroit class="w-7"></FlecheDroit></RouterLink>
   </div>
 </template>
 
