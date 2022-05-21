@@ -3,12 +3,10 @@
     <menu1 class="ml-7 mt-7" />
     <h1 class="mt-24 mb-16 text-center font-quicksand text-3xl font-light tracking-widest text-white">ASKME PASS</h1>
 
-    <p class="ml-11 mr-11 text-center font-raleway font-extralight text-white">
-      Avec le Blumee Pass, vous êtes sûr de disposer de toutes les fonctionnalités qui vous permettront de travailler dans les meilleurs
-      conditions !
-    </p>
+    <!--<nav v-if="$route.name !== 'Accueil'">!-->
+    <RouterLink to="/apropos">A propos</RouterLink>
 
-    <img class="mt-10 h-auto w-auto" src="../src/assets/images/vaguewhite.png" alt="vague" />
+    <RouterView />
 
     <!--footer!-->
     <div class="grid place-content-center">
