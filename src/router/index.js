@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import ConnexionView from '../views/ConnexionView.vue'
+import InscriptionView from '../views/InscriptionView.vue'
 import AccueilView from '../views/AccueilView.vue'
 import AproposView from '../views/AproposView.vue'
 import PassView from '../views/PassView.vue'
@@ -14,8 +15,9 @@ import MentionsView from '../views/MentionsView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/connexion', name: 'Connexion', component: ConnexionView },
     { path: '/', name: 'Accueil', component: AccueilView },
+    { path: '/connexion', name: 'Connexion', component: ConnexionView },
+    { path: '/inscription', name: 'Inscription', component: InscriptionView },
     { path: '/apropos', name: 'Apropos', component: AproposView },
     { path: '/pass', name: 'Pass', component: PassView },
     { path: '/fildiscussion', name: 'Fil', component: FilDiscussionView },

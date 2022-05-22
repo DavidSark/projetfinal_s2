@@ -6,6 +6,10 @@ module.exports = {
   theme: {
     extend: {
 
+      backgroundImage: {
+        'BackgroundFooter': "url('/public/BackgroundFooter.svg')",
+      },
+
       screens: {
         '375p': '375px',
         '425p': '425px',

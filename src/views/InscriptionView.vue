@@ -9,16 +9,17 @@
     
       <div class="flex justify-center mt-10 text-white font-mulish ">
         <div class="mx-10 ">
-        <p class="border-b-2 inline uppercase px-3 ">Sign in</p>
+        <RouterLink to="/connexion" class="border-b-2 inline uppercase px-3  opacity-25 "> Sign in</RouterLink>
         </div>
-        <div class="mx-10 opacity-25 uppercase">
-        <RouterLink to="/inscription" class="border-b-2 inline px-3">Sign up</RouterLink>
+        <div class="mx-10 uppercase">
+        <p class="border-b-2 inline px-3">Sign up</p>
         <RouterView></RouterView>
         </div>
       </div>
       <div class="flex justify-center">
        <div class="bg-white bg-opacity-20 mx-9 rounded-2xl drop-shadow-2xl w-screen h-auto 
                   "> 
+         <InputPseudonyme/>
          <InputEmail />
          <InputMdp />
 
@@ -55,11 +56,13 @@
 import Logo from '../components/icones/Logo.vue'
 import InputEmail from '../components/InputEmail.vue';
 import InputMdp from '../components/InputMdp.vue';
+import InputPseudonyme from '../components/InputPseudonyme.vue';
 import FlecheConnexion from '../components/icones/FlecheConnexion.vue'
 import BackgroundFooter from '../components/icones/BackgroundFooter.vue';
 import Tiktok from '../components/icones/Tiktok.vue'
 import Facebook from '../components/icones/Facebook.vue'
 import Instagram from '../components/icones/Instagram.vue'
+
 
 
 export default {
@@ -73,6 +76,7 @@ export default {
     Tiktok,
     Facebook,
     Instagram,
+    InputPseudonyme,
 },
 };
 </script>
