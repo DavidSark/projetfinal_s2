@@ -5,7 +5,7 @@
       <RouterLink to="/apropos"><Info></Info></RouterLink>
       <RouterLink to="/"><Home></Home></RouterLink>
       <RouterLink to="/demande"><Ajout></Ajout></RouterLink>
-      <RouterLink to="tchat"><Discussion></Discussion></RouterLink>
+      <RouterLink to="/fildiscussion"><Discussion></Discussion></RouterLink>
       <RouterLink to="/profil"><Profile></Profile></RouterLink>
     </div>
   </div>
