@@ -11,7 +11,7 @@
 
     <div class="text-center">
       <div class="">
-        <h2 class="inline-block border-b-2 font-quicksand text-xl font-extralight text-white">Espace d'aide</h2>
+        <h2 class="inline-block border-b-2 font-quicksand text-xl font-extralight text-white uppercase px-4">Espace d'aide</h2>
       </div>
 
       <div class="mx-8 rounded-3xl bg-gris pb-6 ">

@@ -8,10 +8,10 @@
     </div>
     
       <div class="flex justify-center mt-10 text-white font-mulish ">
-        <div class="mx-10 ">
+        <div class="mx-5 640:mx-20">
         <RouterLink to="/connexion" class="border-b-2 inline uppercase px-3  opacity-25 "> Sign in</RouterLink>
         </div>
-        <div class="mx-10 uppercase">
+        <div class="mx-5 640:mx-20 uppercase">
         <p class="border-b-2 inline px-3">Sign up</p>
         <RouterView></RouterView>
         </div>
