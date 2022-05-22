@@ -9,6 +9,7 @@ import TchatView from '../views/TchatView.vue'
 import AperçuAideView from '../views/AperçuAideView.vue'
 import DemandeAideView from '../views/DemandeAideView.vue'
 import MentionsView from '../views/MentionsView.vue'
+import ProfilView from '../views/ProfilView.vue'
 
 
 
@@ -25,6 +26,8 @@ const router = createRouter({
     { path: '/aperçu', name: 'Aperçu', component: AperçuAideView },
     { path: '/demande', name: 'Demande', component: DemandeAideView },
     { path: '/mentions', name: 'Mentions', component: MentionsView },
+    { path: '/profil', name: 'Profil', component: ProfilView },
+
 
   ]
 })

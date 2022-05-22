@@ -1,42 +1,32 @@
 
 <template>
-  <div class="flex relative justify-center items-center z-1001 mx-12 mt-10">
+  <div class="z-1001 relative mx-12 mt-10 flex items-center justify-center">
     <input
       v-model="input"
       type="text"
       placeholder="Mot de passe*"
       class="
-        font-mulish
-        flex
-        bg-white
-        bg-opacity-0
-        w-full
         mr-3
-        placeholder-white
-        placeholder-opacity-95
-        text-white
-        flex-none
-        border-b-2 border-white
-        border-opacity-60
-        text-sm
-        outline-none
         mt-5
+        flex
+        w-full
+        flex-none
+        border-b-2 border-white border-opacity-60
+        bg-white bg-opacity-0
+        font-mulish
+        text-sm text-white
+        placeholder-white placeholder-opacity-95
+        outline-none
       "
     />
 
-
-    <div>
-         
-    </div>
+    <div></div>
   </div>
 </template>
 
 
 <script>
-
-
 export default {
-  components: {
-  },
+  components: {},
 };
 </script>

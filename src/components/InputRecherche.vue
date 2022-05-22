@@ -1,40 +1,41 @@
 
 <template>
-  <div class="flex relative justify-center items-center z-1001 mx-12">
+  <div class="z-1001 relative mx-12 flex items-center justify-center">
     <input
       v-model="input"
       type="text"
       placeholder="Rechercher..."
       class="
-        flex
-        bg-gris
-        w-full
         mr-3
-        placeholder-gris_surligner
-        text-gris_surligner
+        mt-5
+        flex
+        w-full
         flex-none
-        border-b-2 border-gris_surligner
+        border-b-2
+        border-gris_surligner
+        bg-gris
+        font-raleway
         text-sm
+        text-gris_surligner
+        placeholder-gris_surligner
         outline-none
         focus:border-indigo-500
-        mt-5
       "
     />
 
-
     <div>
-         <BoutonFleche class="w-5 mt-5"></BoutonFleche>
+      <BoutonFleche class="mt-5 w-5"></BoutonFleche>
     </div>
   </div>
 </template>
 
 
 <script>
-import BoutonFleche from './icones/BoutonFleche.vue';
+import BoutonFleche from "./icones/BoutonFleche.vue";
 
 export default {
   components: {
-      BoutonFleche,
+    BoutonFleche,
   },
 };
 </script>

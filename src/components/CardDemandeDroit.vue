@@ -1,7 +1,7 @@
 <template>
-  <div class="mx-4 flex h-16 items-center justify-between rounded-xl drop-shadow-xl bg-white">
+  <div class="mx-4 flex h-16 items-center justify-between rounded-xl bg-white drop-shadow-xl">
     <IconeProfile class="w-14"></IconeProfile>
-    <p class="text-xs text-raleway">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="font-raleway text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     <RouterLink to="/connexion"><FlecheDroit class="w-7"></FlecheDroit></RouterLink>
   </div>
 </template>
