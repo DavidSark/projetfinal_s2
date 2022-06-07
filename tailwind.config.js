@@ -5,7 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-
       backgroundImage: {
         'BackgroundFooter': "url('/public/BackgroundFooter.svg')",
       },
@@ -34,5 +33,7 @@ module.exports = {
     },
 
   },
-  plugins: [],
+  plugins: [
+
+  ],
 }
