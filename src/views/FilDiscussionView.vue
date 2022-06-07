@@ -11,7 +11,7 @@
 
       <div class="mx-8 rounded-3xl bg-white md:grid md:grid-cols-2 ">
         <div class="flex items-center justify-evenly border-b-2 md:border-r-2">
-            <IconeProfile class="opacity-0 absolute 375p:opacity-100 375p:relative"></IconeProfile>
+  
                 <div class="flex flex-col items-start mx-2">
                         <p class="font-quicksand">Martin</p>
                         <p class="text-left text-xs 425p:text-base text-gris_surligner font-raleway ">Lorem ipsum dolor sit amet.</p>
@@ -21,7 +21,7 @@
         </div>
           
         <div class="flex items-center justify-evenly border-b-2">
-            <IconeProfile class="opacity-0 absolute 375p:opacity-100 375p:relative"></IconeProfile>
+           
                 <div class="flex flex-col items-start mx-2">
                         <p class="font-quicksand">Léa</p>
                         <p class="text-left text-xs 425p:text-base text-gris_surligner font-raleway ">Lorem ipsum dolor sit amet.</p>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="flex items-center justify-evenly md:border-r-2 ">
-            <IconeProfile class="opacity-0 absolute 375p:opacity-100 375p:relative"></IconeProfile>
+          
                 <div class="flex flex-col items-start mx-2">
                         <p class="font-quicksand">Anonyme</p>
                         <p class="text-left text-xs 425p:text-base text-gris_surligner font-raleway ">Lorem ipsum dolor sit amet.</p>

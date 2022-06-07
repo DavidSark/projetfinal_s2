@@ -4,9 +4,7 @@
 
     <!--<nav v-if="$route.name !== 'Accueil'">!-->
     
-<span v-if="avatar != null" class="mr-3">
-            <img  class="avatar" :src="avatar"/>
-          </span>
+
     <!--footer!-->
     
 
@@ -45,7 +43,7 @@ export default {
       },
       userInfo:null,      // Informations complémentaires user connecté
       name:"Vidéo",       // Titre de l'application ou nom du user
-      avatar:null,        // Avatar / image du user connecté
+      photo:null,        // Avatar / image du user connecté
       isAdmin:false       // Si l'utilisateur est ou non administrateur
     }
   },
@@ -64,7 +62,7 @@ export default {
       console.log('App => Reception user déconnecté', this.user);
       this.userInfo = null;
       this.name = 'Vidéo';
-      this.avatar = null;
+      this.photo = null;
       this.isAdmin = false;
     })
 
@@ -98,10 +96,10 @@ export default {
           // Recherche de l'image du user sur le Storage
           const storage = getStorage();
           // Référence du fichier avec son nom
-          const spaceRef = ref(storage, 'users/'+this.userInfo[0].avatar);
+          const spaceRef = ref(storage, 'users/'+this.userInfo[0].photo);
           getDownloadURL(spaceRef)
             .then((url) => {
-              this.avatar = url;
+              this.photo = url;
             })
             .catch((error) =>{
               console.log('erreur downloadUrl', error);

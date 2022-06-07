@@ -13,7 +13,7 @@
         
 
         <div class="flex justify-center flex-col items-center mt">
-          <IconeProfile class="mt-5"></IconeProfile>
+          <img src="src\assets\images\icon_user.png" class="w-16 mt-6" alt="Icone utilisateur">
           <p class="font-quicksand">Lucie</p>
           <div class="text-left mx-5 mt-5 text-gris_surligner font-raleway">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit aut consequuntur officiis voluptatibus doloremque, dignissimos totam illo corporis quasi distinctio quibusdam porro quae veniam soluta vitae voluptates possimus ipsam hic.</p>
