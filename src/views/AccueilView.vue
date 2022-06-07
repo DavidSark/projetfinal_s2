@@ -3,8 +3,9 @@
     <div class="mx-6 my-6  flex justify-center">
       <IconeProfile class="w-14"></IconeProfile>
     </div>
-
+ <RouterLink to="/connexion">Connexion</RouterLink>
     <div class="mb-8 text-center font-quicksand text-white">
+     
       <p class="text-xl">Bienvenue sur Askme !</p>
       <p class="text-sm text-gris">Tagline?</p>
     </div>
