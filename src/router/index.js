@@ -10,6 +10,7 @@ import AperçuAideView from '../views/AperçuAideView.vue'
 import DemandeAideView from '../views/DemandeAideView.vue'
 import MentionsView from '../views/MentionsView.vue'
 import ProfilView from '../views/ProfilView.vue'
+import ModifView from '../views/ModifProfil.vue'
 
 
 
@@ -23,10 +24,12 @@ const router = createRouter({
     { path: '/pass', name: 'Pass', component: PassView },
     { path: '/fildiscussion', name: 'Fil', component: FilDiscussionView },
     { path: '/tchat', name: 'Tchat', component: TchatView },
-    { path: '/aperçu', name: 'Aperçu', component: AperçuAideView },
+    { path: '/apercu/:id', name: 'Apercu', component: AperçuAideView },
     { path: '/demande', name: 'Demande', component: DemandeAideView },
     { path: '/mentions', name: 'Mentions', component: MentionsView },
     { path: '/profil', name: 'Profil', component: ProfilView },
+    { path: '/modif', name: 'ModifView', component: ModifView },
+
 
 
   ]

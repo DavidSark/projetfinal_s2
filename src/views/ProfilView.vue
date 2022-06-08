@@ -6,8 +6,7 @@
       </div>
     <div class="mx-6 my-6  flex justify-center flex-col items-center">
       <IconeProfile class="w-32"></IconeProfile>
-      <button>+</button>
-    </div>
+        </div>
 
     <div class="text-center">
       

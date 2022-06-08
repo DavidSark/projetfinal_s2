@@ -1,7 +1,9 @@
 <template>
      <span v-if="photo != null">
             <img  class="rounded-full m-2" :src="photo"/>
+            <p class="text-center">{{name}}</p>
           </span>
+          
 </template>
 
 <script>
@@ -33,7 +35,7 @@ export default {
         password: null,
       },
       userInfo:null,      // Informations complémentaires user connecté
-      name:"Vidéo",       // Titre de l'application ou nom du user
+      name:"",       // Titre de l'application ou nom du user
       photo:null,        // Avatar / image du user connecté
       isAdmin:false       // Si l'utilisateur est ou non administrateur
     }

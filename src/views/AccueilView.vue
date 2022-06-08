@@ -22,12 +22,16 @@
 
       <div class="mx-8 rounded-3xl bg-gris pb-6">
         <div>
-          <InputRecherche class="mb-5"></InputRecherche>
-          <div class="640:grid 640:grid-cols-2">
-            <CardDemandeDroit class="640:mt-5" />
-            <CardDemandeDroit class="mt-5" />
-            <CardDemandeDroit class="mt-5" />
-          </div>
+          <input class="mt-4" v-model="filter"/>
+         <tbody>
+                    <tr v-for="part in filterByNom" :key="part.id">
+                        <td class="text-center">                                        
+                                                                     
+                        </td>
+                        <td><RouterLink :to="{ name:'Apercu', params: { id: part.id }}">{{part.nom}}</RouterLink></td>
+                      
+                    </tr>
+                </tbody>
         </div>
       </div>
 
@@ -53,7 +57,8 @@ import {
     collection, 
     onSnapshot, 
     query,
-    where
+    where,
+    orderBy
 } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
 
 // Fonctions Storage
@@ -87,8 +92,36 @@ export default {
       userInfo:null,      // Informations complémentaires user connecté
       name:"Vidéo",       // Titre de l'application ou nom du user
       avatar:null,        // Avatar / image du user connecté
-      isAdmin:false       // Si l'utilisateur est ou non administrateur
+      isAdmin:false,       // Si l'utilisateur est ou non administrateur
+      listeParticipant:[],
+      nom:null, 
+      listeArtisteSynchro:[],
+      filter:''
+
     }
+  },
+
+   computed:{
+      //Tri des catégories par ordre alpha 
+      orderByNom:function(){
+        return this.listeArtisteSynchro.sort(function(a,b){
+          if (a.nom < b.nom) return -1; 
+          if (a.nom > b.nom) return 1;
+          return 0;
+        })
+      },
+
+      filterByNom:function(){
+        if(this.filter.length > 0){
+          let filter = this.filter.toLowerCase();
+          return this.orderByNom.filter(function(groupe){
+            return groupe.nom.toLowerCase().includes(filter);
+          })
+        }
+        else{
+          return this.orderByNom;
+        }
+      }
   },
 
   mounted(){
@@ -107,8 +140,41 @@ export default {
       this.isAdmin = false;
     })
 
+     this.getParticipants();
+     this.getArtisteSynchro();
+
   },
   methods:{
+     async getArtisteSynchro(){
+                // Obtenir Firestore
+                const firestore = getFirestore();
+                // Base de données (collection)  document pays
+                const dbArtiste= collection(firestore, "demandes");
+                // Liste des pays synchronisée
+                const query = await onSnapshot(dbArtiste, (snapshot) =>{
+                    //  Récupération des résultats dans listePaysSynchro
+                    // On utilse map pour récupérer l'intégralité des données renvoyées
+                    // on identifie clairement le id du document
+                    // les rest parameters permet de préciser la récupération de toute la partie data
+                    this.listeArtisteSynchro = snapshot.docs.map(doc => ({id:doc.id, ...doc.data()}));
+                })
+            },
+            
+     async getParticipants(){
+            // Obtenir Firestore
+            const firestore = getFirestore();
+            // Base de données (collection)  document participant
+            const dbPart = collection(firestore, "demandes");
+            // Liste des participants triés sur leur nom
+            const q = query(dbPart, orderBy('nom', 'asc'));
+            await onSnapshot(q, (snapshot) => {
+                this.listeParticipant = snapshot.docs.map(doc => (
+                    {id:doc.id, ...doc.data()}
+                ))
+                // Récupération des images de chaque participant
+                // parcours de la liste
+               })      
+        },
      async getUserConnect(){
       await getAuth().onAuthStateChanged(function(user){
         if(user){
