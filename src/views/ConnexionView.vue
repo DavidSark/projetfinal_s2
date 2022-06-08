@@ -49,9 +49,9 @@
      <div class="mt-10 bg-[url('/public/BackgroundFooter.svg')] bg-no-repeat bg-cover ">
          
          <div class="flex justify-center pt-16">
-         <div class="mx-5"><Tiktok /></div>
-         <div class="mx-5"><Facebook /></div>
-         <div class="mx-5"><Instagram /></div>
+            <div class="mx-5"><Facebook /></div>
+            <div class="mx-5"><Tiktok /></div>
+            <div class="mx-5"><Instagram /></div>
          
          </div>
          <p class="mt-8 mx-8 text-center pb-10 text-white text-raleway font-thin">

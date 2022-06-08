@@ -17,13 +17,12 @@
          
           <div class="text-left mx-5 mt-5 text-gris_surligner font-raleway">
                         <td class="text-center">                                        
-                                                                       
+
                         </td>
                         <p>{{participant.nom}}</p>
                          <p>{{participant.desc}}</p>
                           <p>{{participant.text}}</p>
-                  
-
+       
           </div>
          <p class="font-raleway text-gris_surligner mt-4">Aider !</p>
           <RouterLink to="/tchat"><BoutonFleche class="w-16"></BoutonFleche></RouterLink>

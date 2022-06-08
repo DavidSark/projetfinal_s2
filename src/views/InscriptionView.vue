@@ -1,41 +1,13 @@
 <template>
    <div class="h-screen w-screen overflow-x-hidden bg-gradient-to-b from-baby-blue to-blue-electric">
    
-
-    <div class="flex justify-center mt-8"> 
-      <Logo class="w-16"></Logo>
-     
-    </div>
+<form @submit.prevent="onInscr">
+      <input v-model="user.email" type="email" placeholder="Adresse e-mail" required>
+      <input v-model="user.login" type="text" placeholder="pseudo" required/>
+      <input v-model="user.password" type="password" placeholder="Mot de passe" required>
+      <button type="submit">S'inscrire</button>
+    </form>
     
-      <div class="flex justify-center mt-10 text-white font-mulish ">
-        <div class="mx-5 640:mx-20">
-        <RouterLink to="/connexion" class="border-b-2 inline uppercase px-3  opacity-25 "> Sign in</RouterLink>
-        </div>
-        <div class="mx-5 640:mx-20 uppercase">
-        <p class="border-b-2 inline px-3">Sign up</p>
-        <RouterView></RouterView>
-        </div>
-      </div>
-      <div class="flex justify-center">
-       <div class="bg-white bg-opacity-20 mx-9 rounded-2xl drop-shadow-2xl w-screen h-auto 
-                  "> 
-         <InputPseudonyme/>
-         <InputEmail />
-         <InputMdp />
-
-          <div class="text-left mx-10 mt-9">
-            <p class="font-raleway text-xs text-white">En vous connectant, vous acceptez nos   Conditions d’utilisation & Politiques priviées.</p>
-            </div>
-              <div class="flex justify-center items-center">
-                <div class=" flex justify-center items-center w-20 h-8 bg-white bg-opacity-10 rounded-full drop-shadow-2xl mt-8 mb-10">
-                  <button ><RouterLink to="/"><FlecheConnexion/></RouterLink></button>
-              </div>
-            </div>
-
-            
-          </div>
-          
-      </div>
      <div class="mt-10 bg-[url('/public/BackgroundFooter.svg')] bg-no-repeat bg-cover ">
          
          <div class="flex justify-center pt-16">
@@ -63,9 +35,22 @@ import Tiktok from '../components/icones/Tiktok.vue'
 import Facebook from '../components/icones/Facebook.vue'
 import Instagram from '../components/icones/Instagram.vue'
 
+import { 
+    getAuth,                        // Fonction générale d'authentification
+    signInWithEmailAndPassword,
+    createUserWithEmailAndPassword,     // Se connecter avec un email + mot de passe
+    signOut,                      // Se deconnecter
+} from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js'
 
+import { 
+    getFirestore,   
+    collection,     
+    addDoc,         
 
+    } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
 export default {
+  
+  
   name: "App",
   components: {
     Logo,
@@ -78,5 +63,33 @@ export default {
     Instagram,
     InputPseudonyme,
 },
-};
+
+data() {
+        return {
+            user:{              // Utilisateur : email + mot de passe
+                email : '',
+                password : '',
+                login:'',
+            },
+            }
+      },
+    methods: {
+
+    onInscr() {
+      createUserWithEmailAndPassword(getAuth(), this.user.email, this.user.password)
+        .then((userCredential) => {
+          // Signed in 
+          const user = userCredential.user;
+         
+            this.$router.push('/');    
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // ..
+        });
+    }
+  }
+}
 </script>
