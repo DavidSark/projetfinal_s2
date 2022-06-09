@@ -13,8 +13,8 @@
         <div class="mt flex flex-col items-center justify-center">
           <div class="mx-5 mt-5 text-left font-raleway text-gris_surligner 375p:text-sm 425p:text-base w-11/12">
             <p class="w-full text-center font-quicksand font-semibold uppercase text-dark-black">{{ participant.nom }}</p>
-            <p class=" w-full text-center italic">{{ participant.desc }}</p>
-            <p>{{participant.text}}</p>
+            <p class=" w-full my-7 text-center italic">{{ participant.desc }}</p>
+            <p class="w-full ">{{participant.text}}</p>
           </div>
 
           <RouterLink to="/tchat"><BoutonFleche class="w-16"></BoutonFleche></RouterLink>

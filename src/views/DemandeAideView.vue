@@ -30,7 +30,8 @@
 
             <div class="my-4">
               <textarea
-                class="w-5/6 rounded-2xl border-2 p-1 pl-2 h-40 375p:placeholder:text-sm "
+                class="w-5/6 rounded-2xl border-2 p-1 pl-2 h-40 375p:placeholder:text-sm
+                425p:placeholder:text-base "
                 placeholder="Ecrivez votre demande..."
                 v-model="participant.text"
                 required
