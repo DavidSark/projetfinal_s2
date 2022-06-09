@@ -47,7 +47,7 @@
             <div
               v-for="part in filterByNom"
               :key="part.id"
-              class="mx-4 my-3 flex h-auto w-4/5 items-center justify-between rounded-xl bg-white p-3 text-left drop-shadow-xl 375p:text-sm"
+              class="mx-4 my-3 flex h-auto w-4/5 items-center justify-between rounded-xl bg-white p-3 text-left drop-shadow-xl 375p:text-sm 425p:text-base"
             >
               <div class="mx-3 w-full">
                 <RouterLink class="font-semibold text-stone-700" :to="{ name: 'Apercu', params: { id: part.id } }">{{
@@ -65,7 +65,7 @@
         </div>
       </div>
 
-      <div class=""><img class="w-screen lg:hidden" src="/src/assets/images/pubadidas.png" alt="" /></div>
+      <div class="mb-14"><img class="w-screen lg:hidden" src="/src/assets/images/pubadidas.png" alt="" /></div>
 
       <div>
         <Menuu></Menuu>

@@ -26,7 +26,7 @@
                  </div>
             </div>
             
-            <div v-if="userSelected != null" class="mt-5 font-quicksand"> 
+            <div v-if="userSelected != null" class="mt-5 font-quicksand mb-24"> 
                 <form class="mb-3 mt-5" @submit.prevent="createDisc()">
                     <div class=" text-center flex justify-center items-center flex-col">
                         <div class="text-white">
@@ -41,7 +41,7 @@
                     </div>
                     
                 </form>
- <div class=" m-auto my-5 w-1/2 border-2 border-white"></div>
+ <div class=" m-auto my-5 w-1/2 border-2 border-white "></div>
                 <h5 class="text-center text-white font-quicksand">Vos fils de discussion avec : {{userSelected.login}}</h5>
                 <div v-if="chat.length > 0" class="flex justify-center"> 
                     <table class="text-white mt-3">

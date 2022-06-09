@@ -1,7 +1,7 @@
 
 <template>
-  <div class="border-gradient-to-r h-max w-screen rounded-t-3xl border-4 bg-white from-baby-blue to-blue-electric">
-    <div class="flex items-center justify-between p-2">
+  <div class="fixed bottom-0 border-gradient-to-r w-screen rounded-t-3xl border-4 bg-white from-baby-blue to-blue-electric">
+    <div class="flex items-center justify-between px-5">
       <RouterLink to="/apropos"><Info></Info></RouterLink>
       <RouterLink to="/"><Home></Home></RouterLink>
       <RouterLink to="/demande"><Ajout></Ajout></RouterLink>

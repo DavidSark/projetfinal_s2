@@ -52,7 +52,7 @@
       <img class="mt-10 w-52" src="/src/assets/images/baptistesocials.png" alt="baptiste social" />
     </div>
     <p class="mb-12 text-center font-quicksand tracking-wider text-white">Baptiste ROGNON</p>
-
+    <div class="mb-20"></div>
     <!--footer!-->
     <Menuu></Menuu>
   </div>
