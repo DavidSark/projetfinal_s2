@@ -44,7 +44,7 @@
           </div>
           
             <div class="flex flex-col justify-center items-center font-raleway">
-              <div v-for="part in filterByNom" :key="part.id" class="mx-4 w-4/5 my-3 flex h-16 items-center justify-between rounded-xl bg-white drop-shadow-xl text-left 375p:text-sm">
+              <div v-for="part in filterByNom" :key="part.id" class="mx-4 w-4/5 my-3 flex h-auto p-3 items-center justify-between rounded-xl bg-white drop-shadow-xl text-left 375p:text-sm">
                       <div class="mx-3 w-full">
                         <RouterLink class="font-semibold " :to="{ name: 'Apercu', params: { id: part.id } }">{{ part.nom }}</RouterLink>
                         <div class="flex justify-between">

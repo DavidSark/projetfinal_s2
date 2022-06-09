@@ -11,12 +11,10 @@
 
       <div class="mx-8 rounded-3xl bg-white pb-6">
         <div class="mt flex flex-col items-center justify-center">
-          <div class="mx-5 mt-5 text-left font-raleway text-gris_surligner 375p:text-sm 425p:text-base">
-            <td class="text-center"></td>
-
-            <p class="text-center font-quicksand font-semibold uppercase text-dark-black">{{ participant.nom }}</p>
-            <p class="text-center italic">{{ participant.desc }}</p>
-            <p class="p-5">{{ participant.text }}</p>
+          <div class="mx-5 mt-5 text-left font-raleway text-gris_surligner 375p:text-sm 425p:text-base w-11/12">
+            <p class="w-full text-center font-quicksand font-semibold uppercase text-dark-black">{{ participant.nom }}</p>
+            <p class=" w-full text-center italic">{{ participant.desc }}</p>
+            <p>{{participant.text}}</p>
           </div>
 
           <RouterLink to="/tchat"><BoutonFleche class="w-16"></BoutonFleche></RouterLink>
