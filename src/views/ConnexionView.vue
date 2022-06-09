@@ -152,7 +152,7 @@ export default {
           // Mise à jour du message
           this.message = "User connecté : " + this.user.email;
 
-          this.$router.push("/");
+          this.$router.push("/accueil");
         })
         .catch((error) => {
           // Erreur de connexion

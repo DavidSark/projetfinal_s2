@@ -17,7 +17,7 @@
             <p class="w-full p-3">{{ participant.text }}</p>
           </div>
 
-          <RouterLink to="/tchat"><BoutonFleche class="w-16"></BoutonFleche></RouterLink>
+          <RouterLink to="/fildiscussion"><BoutonFleche class="w-16"></BoutonFleche></RouterLink>
         </div>
       </div>
 

@@ -3,11 +3,7 @@
     <div class="mx-6 my-6 flex justify-center">
       <IconeProfile class="w-14"></IconeProfile>
     </div>
-    <div class="flex flex-col">
-      <RouterLink to="/connexion">Connexion</RouterLink>
-      <RouterLink to="/inscription">Inscription</RouterLink>
-    </div>
-
+    
     <div class="mb-8 text-center font-quicksand text-white">
       <p class="text-xl">Bienvenue sur Askme !</p>
     </div>

@@ -6,7 +6,7 @@
 
     <div class="mt-10 flex justify-center font-mulish text-white">
       <div class="mx-10 uppercase opacity-25">
-        <RouterLink to="/connexion"><p class="inline border-b-2 px-3 uppercase">Sign in</p></RouterLink>
+        <RouterLink to="/"><p class="inline border-b-2 px-3 uppercase">Sign in</p></RouterLink>
       </div>
       <div class="mx-10 uppercase">
         <RouterLink to="/inscription" class="inline border-b-2 px-3">Sign up</RouterLink>
@@ -161,7 +161,7 @@ export default {
           // Signed in
           const user = userCredential.user;
 
-          this.$router.push("/connexion");
+          this.$router.push("/");
           // ...
         })
         .catch((error) => {

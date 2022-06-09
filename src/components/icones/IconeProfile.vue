@@ -1,7 +1,7 @@
 <template>
      <span v-if="photo != null">
             <img  class="rounded-full m-2" :src="photo"/>
-            <p class="text-center">{{name}}</p>
+            <p class="text-center text-white font-quicksand">{{name}}</p>
             
           </span>
           

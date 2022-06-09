@@ -17,8 +17,8 @@ import ModifView from '../views/ModifProfil.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/', name: 'Accueil', component: AccueilView },
-    { path: '/connexion', name: 'Connexion', component: ConnexionView },
+    { path: '/accueil', name: 'Accueil', component: AccueilView },
+    { path: '/', name: 'Connexion', component: ConnexionView },
     { path: '/inscription', name: 'Inscription', component: InscriptionView },
     { path: '/apropos', name: 'Apropos', component: AproposView },
     { path: '/pass', name: 'Pass', component: PassView },
