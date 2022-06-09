@@ -110,7 +110,7 @@ export default {
                 };
                 // Emission évènement de déconnexion
                 emitter.emit('deConnectUser', { user: this.user });
-                this.$router.push('/connexion');
+                this.$router.push('/');
 
             })
             .catch(error=>{
