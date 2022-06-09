@@ -11,16 +11,16 @@
 
       <div class="mx-8 rounded-3xl bg-white pb-6">
         <div class="mt flex flex-col items-center justify-center">
-          <form enctype="multipart/form-data" @submit.prevent="createParticipant">
-            <div></div>
-
-            <div class="my-4 mt-11">
-              <input class="rounded-2xl border-2 p-2" type="text" placeholder="Nom de la demande..." v-model="participant.nom" required />
-            </div>
+          <form class="w-full text-sm" enctype="multipart/form-data" @submit.prevent="createParticipant">
+          <div class="my-4">
+              <input class="w-5/6  mt-11 rounded-2xl border-2 p-1 pl-2 375p:placeholder:text-sm
+              425p:placeholder:text-base" type="text" placeholder="Nom de la demande..." v-model="participant.nom" required />
+          </div>
+          
 
             <div class="my-4">
               <input
-                class="rounded-2xl border-2 p-2"
+                class="w-5/6 rounded-2xl border-2 p-1 pl-2 375p:placeholder:text-sm 425p:placeholder:text-base"
                 type="text"
                 placeholder="Objet de la demande..."
                 v-model="participant.desc"
@@ -30,11 +30,11 @@
 
             <div class="my-4">
               <textarea
-                class="rounded-2xl border-2 p-5 pb-16"
+                class="w-5/6 rounded-2xl border-2 p-1 pl-2 h-40 375p:placeholder:text-sm "
                 placeholder="Ecrivez votre demande..."
                 v-model="participant.text"
                 required
-              ></textarea>
+               ></textarea>
             </div>
 
             <button type="submit"><BoutonFleche class="mt-5 w-16"></BoutonFleche></button>
