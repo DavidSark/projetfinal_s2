@@ -16,7 +16,7 @@
                     <span class="text-white" >Sélectionnez un utilisateur..</span>
                 </div>
                 <div class="flex justify-center">
-                  <select class="custom-select rounded-full w-3/4 px-2" v-model="userSelected" @change="selectUser">
+                  <select class="custom-select rounded-full w-3/4 py-1 px-2" v-model="userSelected" @change="selectUser">
                       <option selected disabled value="">Sélectionnez un utilisateur</option>
                       <option
                           v-for="util in listeUsers" :key="util.uid"
@@ -33,7 +33,7 @@
                             <span class="input-group-text">Nouveau fil avec {{userSelected.login}}</span>
                         </div>
                        
-                          <input type="text" placeholder="Nommez la discussion" class="rounded-full px-2 w-3/4" v-model="libelle" required />
+                          <input type="text" placeholder="Nommez la discussion" class="rounded-full py-1 px-2 w-3/4" v-model="libelle" required />
                           <button class="font-quicksand mt-3 text-white" type="submit" title="Création">
                               <p>Créer</p>
                           </button>
@@ -118,7 +118,7 @@
                                                          
                                     </div>
                                 </div>
-                                <div class="text-xs ml-6">
+                                <div class="text-xs text-white ml-6">
                                      {{userInfo[0].login}} - {{dateFr(msg.date)}} 
                                 </div>
                                   
@@ -129,7 +129,7 @@
                                             <p>{{msg.contenu}}</p>
                                    
                                     </div>
-                                    <div class="text-xs ml-6 flex justify-end">
+                                    <div class="text-xs ml-6 text-white flex justify-end">
                                     {{userSelected.login}} - {{dateFr(msg.date)}}
                                       </div>  
                                 </div>

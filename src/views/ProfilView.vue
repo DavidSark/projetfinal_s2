@@ -17,7 +17,7 @@
                 <div class="flex flex-col items-start ">
                         <p class="font-quicksand">Proposer son aide</p>
                 </div>
-                    <RouterLink to="/"><FlecheDroit class=" w-8"></FlecheDroit></RouterLink> 
+                    <RouterLink to="/accueil"><FlecheDroit class=" w-8"></FlecheDroit></RouterLink> 
         </div>
           
         <div class="flex items-center justify-evenly border-b-2">
@@ -33,20 +33,20 @@
                 <div class="flex flex-col items-start ">
                         <p class="font-quicksand">Fil de discussion</p>
                 </div>
-                    <RouterLink to="/tchat"><FlecheDroit class=" w-8"></FlecheDroit></RouterLink> 
+                    <RouterLink class="" to="/fildiscussion"><FlecheDroit class=" w-8"></FlecheDroit></RouterLink> 
         </div>
-
+      
         
       </div>
       
 
     <button @click="onDcnx()">
-      <div class="flex justify-center mt-5">
+      <div class="flex justify-center mt-5 mb-16">
         <BoutonDeconnection class="w-7"></BoutonDeconnection>
       </div>
     </button>
     <div>
-      <menuu class="mt-8"></menuu>
+      <menuu class=""></menuu>
     </div>     
     </div>
   </div>
