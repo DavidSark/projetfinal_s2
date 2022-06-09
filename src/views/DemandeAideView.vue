@@ -48,7 +48,7 @@
         </div>
       </div>
 
-      <div class=""><img class="w-screen lg:hidden" src="/src/assets/images/pubadidas.png" alt="" /></div>
+      <div class=""><img class="w-screen" src="/src/assets/images/pubadidas.png" alt="" /></div>
 
       <div>
         <menuu></menuu>

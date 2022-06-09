@@ -17,7 +17,7 @@
         <h2 class="inline-block border-b-2 px-4 font-quicksand text-xl font-extralight uppercase text-white">Espace d'aide</h2>
       </div>
 
-      <div class="mx-8 rounded-3xl bg-gris pb-6">
+      <div class="mx-8 rounded-3xl bg-gris pb-6 lg:mb-32">
         <div>
           <div class="z-1001 relative mx-12 flex items-center justify-center">
             <input
