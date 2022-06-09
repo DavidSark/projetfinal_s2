@@ -16,7 +16,7 @@
         </div>
       <div @submit.prevent="onCnx" class="bg-white bg-opacity-20 mx-9 rounded-2xl drop-shadow-2xl h-auto">
                                            
-                            <div class="flex relative justify-center items-center z-1001  mx-12 ">
+                            <div class="flex relative justify-center items-center z-1001 pt-10 mx-12 ">
                                 <input 
                                     type="email"
                                     v-model="user.email" placeholder="E-mail*" required class="
@@ -67,7 +67,7 @@
                             {{message}}
                         </div>
                      <div class="text-left mx-10 mt-9">
-            <p class="font-raleway text-xs text-white">En vous connectant, vous acceptez nos   Conditions d’utilisation & Politiques priviées.</p>
+            <p class="font-raleway text-xs text-white">En vous connectant, vous acceptez nos <span class="font-bold">Conditions d’utilisation</span> & <span class="font-bold">Politiques priviées</span>.</p>
             </div>
 
                     <div class="flex justify-center ">  
@@ -77,7 +77,7 @@
 
 
                     </div>
-                </div>
+        </div>
      <div class="mt-10 bg-[url('/public/BackgroundFooter.svg')] bg-no-repeat bg-cover ">
          
          <div class="flex justify-center pt-16">
