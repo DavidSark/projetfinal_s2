@@ -57,9 +57,6 @@
         />
       </div>
 
-      <div class="mt-10 text-center text-white" role="alert">
-        {{ message }}
-      </div>
       <div class="mx-10 mt-9 text-left">
         <p class="font-raleway text-xs text-white">
           En vous connectant, vous acceptez nos <span class="font-bold">Conditions d’utilisation</span> &
