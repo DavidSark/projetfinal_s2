@@ -30,7 +30,7 @@
 
             <div class="my-4">
               <textarea
-                class="rounded-2xl border-2 p-5"
+                class="rounded-2xl border-2 p-5 pb-16"
                 placeholder="Ecrivez votre demande..."
                 v-model="participant.text"
                 required
