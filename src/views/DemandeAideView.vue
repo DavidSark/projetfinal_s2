@@ -60,28 +60,20 @@
 <script>
 import IconeProfile from "../components/icones/IconeProfile.vue";
 import BoutonFleche from "../components/icones/BoutonFleche.vue";
-import InputMatiere from "../components/InputMatiere.vue";
+
 import Menuu from "../components/Menu.vue";
 
 import {
   getFirestore, // Obtenir le Firestore
   collection, // Utiliser une collection de documents
-  doc, // Obtenir un document par son id
-  getDocs, // Obtenir la liste des documents d'une collection
   addDoc, // Ajouter un document à une collection
-  updateDoc, // Mettre à jour un document dans une collection
-  deleteDoc, // Supprimer un document d'une collection
-  onSnapshot, // Demander une liste de documents d'une collection, en les synchronisant
-  query, // Permet d'effectuer des requêtes sur Firestore
-  orderBy, // Permet de demander le tri d'une requête query
+
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
 
 // Cloud Storage : import des fonctions
 import {
   getStorage, // Obtenir le Cloud Storage
   ref, // Pour créer une référence à un fichier à uploader
-  getDownloadURL, // Permet de récupérer l'adress complète d'un fichier du Storage
-  uploadString, // Permet d'uploader sur le Cloud Storage une image en Base64
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
 
 export default {
@@ -100,7 +92,6 @@ export default {
   components: {
     IconeProfile,
     BoutonFleche,
-    InputMatiere,
     Menuu,
   },
 

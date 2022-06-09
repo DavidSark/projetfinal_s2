@@ -3,7 +3,7 @@
     <div class="mx-6 my-6 flex justify-center">
       <IconeProfile class="w-14"></IconeProfile>
     </div>
-    
+
     <div class="mb-8 text-center font-quicksand text-white">
       <p class="text-xl">Bienvenue sur Askme !</p>
     </div>
@@ -73,10 +73,7 @@
 <script>
 //import { MenuIcon } from "@heroicons/vue/solid";
 import IconeProfile from "../components/icones/IconeProfile.vue";
-import InputRecherche from "../components/InputRecherche.vue";
-import CardDemandeDroit from "../components/CardDemandeDroit.vue";
 import FlecheDroit from "../components/icones/FlecheDroit.vue";
-
 import Menuu from "../components/Menu.vue";
 
 import {
@@ -100,8 +97,6 @@ export default {
   name: "App",
   components: {
     IconeProfile,
-    InputRecherche,
-    CardDemandeDroit,
     Menuu,
     FlecheDroit,
   },

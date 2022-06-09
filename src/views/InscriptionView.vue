@@ -113,35 +113,22 @@
 
 <script >
 import Logo from "../components/icones/Logo.vue";
-import InputEmail from "../components/InputEmail.vue";
-import InputMdp from "../components/InputMdp.vue";
-import InputPseudonyme from "../components/InputPseudonyme.vue";
 import FlecheConnexion from "../components/icones/FlecheConnexion.vue";
-import BackgroundFooter from "../components/icones/BackgroundFooter.vue";
-import Tiktok from "../components/icones/Tiktok.vue";
-import Facebook from "../components/icones/Facebook.vue";
-import Instagram from "../components/icones/Instagram.vue";
+
+
 
 import {
   getAuth, // Fonction générale d'authentification
-  signInWithEmailAndPassword,
   createUserWithEmailAndPassword, // Se connecter avec un email + mot de passe
-  signOut, // Se deconnecter
+
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
 
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
+
 export default {
   name: "App",
   components: {
     Logo,
-    InputEmail,
-    InputMdp,
     FlecheConnexion,
-    BackgroundFooter,
-    Tiktok,
-    Facebook,
-    Instagram,
-    InputPseudonyme,
   },
 
   data() {

@@ -45,13 +45,6 @@ import {
   getDoc, // Permet de demander le tri d'une requête query
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
 
-// Cloud Storage : import des fonctions
-import {
-  getStorage, // Obtenir le Cloud Storage
-  ref, // Pour créer une référence à un fichier à uploader
-  getDownloadURL, // Permet de récupérer l'adress complète d'un fichier du Storage
-} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
-
 export default {
   name: "App",
   components: {
