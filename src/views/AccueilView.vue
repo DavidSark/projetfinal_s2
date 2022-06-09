@@ -19,32 +19,44 @@
 
       <div class="mx-8 rounded-3xl bg-gris pb-6">
         <div>
-          <input
-            class="
-              mt-5
-              border-b-2
-              border-gris_surligner
-              font-raleway
-              text-gris_surligner
-              placeholder-gris_surligner
-              outline-none
-              focus:border-indigo-500
-            "
-            placeholder="Rechercher..."
-            v-model="filter"
-          />
-          <tbody>
-            <div class="bg-white">
-              <tr v-for="part in filterByNom" :key="part.id">
-                <td>
-                  <div class="mb-5">
-                    <RouterLink :to="{ name: 'Apercu', params: { id: part.id } }">{{ part.nom }}</RouterLink>
-                  </div>
-                </td>
-                <p>{{ part.desc }}</p>
-              </tr>
+          <div class="z-1001 relative mx-12 flex items-center justify-center">
+            <input
+                        class="
+                  mr-3
+                  mt-5
+                  mb-5
+                  flex
+                  w-full
+                  flex-none
+                  border-b-2
+                  border-gris_surligner
+                  bg-gris
+                  font-raleway
+                  text-sm
+                  text-gris_surligner
+                  placeholder-gris_surligner
+                  outline-none
+                  focus:border-indigo-500
+                "
+              placeholder="Rechercher..."
+              v-model="filter"
+            />
+          </div>
+          
+            <div class="flex flex-col justify-center items-center font-raleway">
+              <div v-for="part in filterByNom" :key="part.id" class="mx-4 w-4/5 my-3 flex h-16 items-center justify-between rounded-xl bg-white drop-shadow-xl text-left 375p:text-sm">
+                      <div class="mx-3 w-full">
+                        <RouterLink class="font-semibold " :to="{ name: 'Apercu', params: { id: part.id } }">{{ part.nom }}</RouterLink>
+                        <div class="flex justify-between">
+                          <p class="">{{ part.desc }}</p>
+                          <RouterLink :to="{ name: 'Apercu', params: { id: part.id } }">
+                          <FlecheDroit class="w-7 h-auto"></FlecheDroit>
+                          </RouterLink>
+                         </div>
+                      </div>
+                  
+              </div>
             </div>
-          </tbody>
         </div>
       </div>
 
@@ -62,6 +74,7 @@
 import IconeProfile from "../components/icones/IconeProfile.vue";
 import InputRecherche from "../components/InputRecherche.vue";
 import CardDemandeDroit from "../components/CardDemandeDroit.vue";
+import FlecheDroit from "../components/icones/FlecheDroit.vue";
 
 import Menuu from "../components/Menu.vue";
 
@@ -89,6 +102,7 @@ export default {
     InputRecherche,
     CardDemandeDroit,
     Menuu,
+    FlecheDroit
   },
 
   data() {
