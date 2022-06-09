@@ -4,48 +4,80 @@
 
     <div class="flex justify-center mt-8"> 
       <Logo class="w-16"></Logo>
-     
     </div>
-    
-      <form @submit.prevent="onCnx">
-                    <div class="card-body">                          
-                        <div class="row">
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" >Email</span>
-                                </div>
+      <div class="flex justify-center mt-10 text-white font-mulish ">
+        <div class="mx-10 ">
+        <p class="border-b-2 inline uppercase px-3 ">Sign in</p>
+        </div>
+        <div class="mx-10 opacity-25 uppercase">
+        <RouterLink to="/inscription" class="border-b-2 inline px-3">Sign up</RouterLink>
+        <RouterView></RouterView>
+        </div>
+        </div>
+      <div @submit.prevent="onCnx" class="bg-white bg-opacity-20 mx-9 rounded-2xl drop-shadow-2xl h-auto">
+                                           
+                            <div class="flex relative justify-center items-center z-1001  mx-12 ">
                                 <input 
-                                    class="form-control" placeholder="Adresse mail" type="email"
-                                    v-model="user.email" required />                    
+                                    type="email"
+                                    v-model="user.email" placeholder="E-mail*" required class="
+                                    font-mulish
+                                    flex
+                                    bg-white
+                                    bg-opacity-0
+                                    w-full
+                                    mr-3
+                                    placeholder-white
+                                    placeholder-opacity-95
+                                    text-white
+                                    flex-none
+                                    border-b-2 border-white
+                                    border-opacity-60
+                                    text-sm
+                                    outline-none
+                                    mt-5
+                                " />                    
                             </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" >Mot de passe</span>
-                                </div>
+                           
+                             <div class="flex relative justify-center items-center z-1001 mt-10 mx-12 "> 
                                 <input 
-                                    class="form-control" placeholder="Mot de passe" 
+                                     placeholder="Mot de passe*" 
                                     :type="type" v-model="user.password" required
+                                    class="
+                                    font-mulish
+                                    flex
+                                    bg-white
+                                    bg-opacity-0
+                                    w-full
+                                    mr-3
+                                    placeholder-white
+                                    placeholder-opacity-95
+                                    text-white
+                                    flex-none
+                                    border-b-2 border-white
+                                    border-opacity-60
+                                    text-sm
+                                    outline-none
+                                    mt-5
+                                " 
                                     />                    
-                            </div>
-                        </div>    
+                           </div>  
+                          
 
-                        <div class="alert alert-warning" role="alert">
+                        <div class="text-white text-center mt-10" role="alert">
                             {{message}}
                         </div>
-                    </div>
+                     <div class="text-left mx-10 mt-9">
+            <p class="font-raleway text-xs text-white">En vous connectant, vous acceptez nos   Conditions d’utilisation & Politiques priviées.</p>
+            </div>
 
-                    <div class="card-footer">  
-                        <button type="submit" class="float-left btn btn-dark" @click="onCnx()"  >
-                        Connexion
-                          
+                    <div class="flex justify-center ">  
+                        <button type="submit" class="flex justify-center items-center w-20 h-8 bg-white bg-opacity-10 rounded-full drop-shadow-2xl mt-8 mb-10"  @click="onCnx()"  >
+                        <FlecheConnexion></FlecheConnexion>
                         </button>
 
-                        <button type="button" class="float-right btn btn-dark"
-                            @click="onDcnx()" >
-                            Deconnexion
-                        </button>
+
                     </div>
-                </form>
+                </div>
      <div class="mt-10 bg-[url('/public/BackgroundFooter.svg')] bg-no-repeat bg-cover ">
          
          <div class="flex justify-center pt-16">
@@ -55,7 +87,7 @@
          
          </div>
          <p class="mt-8 mx-8 text-center pb-10 text-white text-raleway font-thin">
-           © Blumee. All <span class="font-bold">rights reserved 
+           © Askme. All <span class="font-bold">rights reserved 
           C.G.U & Mentions légales</span>
         </p>
       </div>

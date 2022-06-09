@@ -81,7 +81,7 @@ data() {
           // Signed in 
           const user = userCredential.user;
          
-            this.$router.push('/');    
+            this.$router.push('/connexion');    
           // ...
         })
         .catch((error) => {

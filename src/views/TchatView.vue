@@ -21,8 +21,11 @@
                         v-for="util in listeUsers" :key="util.uid"
                         :value="util"
                     >{{util.login}}</option>
+
+                    
                 </select>
             </div>
+            
             <div v-if="userSelected != null"> 
                 <form class="mb-3" @submit.prevent="createDisc()">
                     <div class="input-group">

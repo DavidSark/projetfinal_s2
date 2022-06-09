@@ -25,11 +25,8 @@
           <input class="mt-4" v-model="filter"/>
          <tbody>
                     <tr v-for="part in filterByNom" :key="part.id">
-                        <td class="text-center">                                        
-                                                                     
-                        </td>
-                        <td><RouterLink :to="{ name:'Apercu', params: { id: part.id }}">{{part.nom}}</RouterLink></td>
-                      
+                      <td><RouterLink :to="{ name:'Apercu', params: { id: part.id }}">{{part.nom}}</RouterLink></td>
+                      <p>{{part.desc}}</p>                 
                     </tr>
                 </tbody>
         </div>
