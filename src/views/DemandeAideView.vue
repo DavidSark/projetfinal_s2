@@ -115,7 +115,7 @@ export default {
       const db = getFirestore();
       const docRef = addDoc(collection(db, "demandes"), this.participant);
       // redirection sur la liste des participants
-      this.$router.push("/");
+      this.$router.push("/accueil");
     },
   },
 };
