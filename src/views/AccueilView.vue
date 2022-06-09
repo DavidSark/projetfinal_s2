@@ -21,46 +21,51 @@
         <div>
           <div class="z-1001 relative mx-12 flex items-center justify-center">
             <input
-                        class="
-                  mr-3
-                  mt-5
-                  mb-5
-                  flex
-                  w-full
-                  flex-none
-                  border-b-2
-                  border-gris_surligner
-                  bg-gris
-                  font-raleway
-                  text-sm
-                  text-gris_surligner
-                  placeholder-gris_surligner
-                  outline-none
-                  focus:border-indigo-500
-                "
+              class="
+                mr-3
+                mt-5
+                mb-5
+                flex
+                w-full
+                flex-none
+                border-b-2
+                border-gris_surligner
+                bg-gris
+                font-raleway
+                text-sm
+                text-gris_surligner
+                placeholder-gris_surligner
+                outline-none
+                focus:border-indigo-500
+              "
               placeholder="Rechercher..."
               v-model="filter"
             />
           </div>
-          
-            <div class="flex flex-col justify-center items-center font-raleway">
-              <div v-for="part in filterByNom" :key="part.id" class="mx-4 w-4/5 my-3 flex h-auto p-3 items-center justify-between rounded-xl bg-white drop-shadow-xl text-left 375p:text-sm">
-                      <div class="mx-3 w-full">
-                        <RouterLink class="font-semibold " :to="{ name: 'Apercu', params: { id: part.id } }">{{ part.nom }}</RouterLink>
-                        <div class="flex justify-between">
-                          <p class="">{{ part.desc }}</p>
-                          <RouterLink :to="{ name: 'Apercu', params: { id: part.id } }">
-                          <FlecheDroit class="w-7 h-auto"></FlecheDroit>
-                          </RouterLink>
-                         </div>
-                      </div>
-                  
+
+          <div class="flex flex-col items-center justify-center font-raleway">
+            <div
+              v-for="part in filterByNom"
+              :key="part.id"
+              class="mx-4 my-3 flex h-auto w-4/5 items-center justify-between rounded-xl bg-white p-3 text-left drop-shadow-xl 375p:text-sm"
+            >
+              <div class="mx-3 w-full">
+                <RouterLink class="font-semibold text-stone-700" :to="{ name: 'Apercu', params: { id: part.id } }">{{
+                  part.nom
+                }}</RouterLink>
+                <div class="mt-3 flex justify-between">
+                  <p class="mr-4">{{ part.desc }}</p>
+                  <RouterLink :to="{ name: 'Apercu', params: { id: part.id } }">
+                    <FlecheDroit class="h-auto w-7"></FlecheDroit>
+                  </RouterLink>
+                </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
 
-      <div class="my-9 h-32 w-screen bg-soft-beige"></div>
+      <div class=""><img class="w-screen lg:hidden" src="/src/assets/images/pubadidas.png" alt="" /></div>
 
       <div>
         <Menuu></Menuu>
@@ -102,7 +107,7 @@ export default {
     InputRecherche,
     CardDemandeDroit,
     Menuu,
-    FlecheDroit
+    FlecheDroit,
   },
 
   data() {

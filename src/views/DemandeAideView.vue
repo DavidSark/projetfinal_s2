@@ -12,11 +12,15 @@
       <div class="mx-8 rounded-3xl bg-white pb-6">
         <div class="mt flex flex-col items-center justify-center">
           <form class="w-full text-sm" enctype="multipart/form-data" @submit.prevent="createParticipant">
-          <div class="my-4">
-              <input class="w-5/6  mt-11 rounded-2xl border-2 p-1 pl-2 375p:placeholder:text-sm
-              425p:placeholder:text-base" type="text" placeholder="Nom de la demande..." v-model="participant.nom" required />
-          </div>
-          
+            <div class="my-4">
+              <input
+                class="mt-11 w-5/6 rounded-2xl border-2 p-1 pl-2 375p:placeholder:text-sm 425p:placeholder:text-base"
+                type="text"
+                placeholder="Nom de la demande..."
+                v-model="participant.nom"
+                required
+              />
+            </div>
 
             <div class="my-4">
               <input
@@ -30,12 +34,11 @@
 
             <div class="my-4">
               <textarea
-                class="w-5/6 rounded-2xl border-2 p-1 pl-2 h-40 375p:placeholder:text-sm
-                425p:placeholder:text-base "
+                class="h-40 w-5/6 rounded-2xl border-2 p-1 pl-2 375p:placeholder:text-sm 425p:placeholder:text-base"
                 placeholder="Ecrivez votre demande..."
                 v-model="participant.text"
                 required
-               ></textarea>
+              ></textarea>
             </div>
 
             <button type="submit"><BoutonFleche class="mt-5 w-16"></BoutonFleche></button>
@@ -45,7 +48,7 @@
         </div>
       </div>
 
-      <div class="my-9 h-32 w-screen bg-soft-beige"></div>
+      <div class=""><img class="w-screen lg:hidden" src="/src/assets/images/pubadidas.png" alt="" /></div>
 
       <div>
         <menuu></menuu>

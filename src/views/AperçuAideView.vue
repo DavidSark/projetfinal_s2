@@ -11,17 +11,17 @@
 
       <div class="mx-8 rounded-3xl bg-white pb-6">
         <div class="mt flex flex-col items-center justify-center">
-          <div class="mx-5 mt-5 text-left font-raleway text-gris_surligner 375p:text-sm 425p:text-base w-11/12">
+          <div class="mx-5 mt-5 w-11/12 text-left font-raleway text-gris_surligner 375p:text-sm 425p:text-base">
             <p class="w-full text-center font-quicksand font-semibold uppercase text-dark-black">{{ participant.nom }}</p>
-            <p class=" w-full my-7 text-center italic">{{ participant.desc }}</p>
-            <p class="w-full ">{{participant.text}}</p>
+            <p class="my-4 w-full text-center italic">{{ participant.desc }}</p>
+            <p class="w-full p-3">{{ participant.text }}</p>
           </div>
 
           <RouterLink to="/tchat"><BoutonFleche class="w-16"></BoutonFleche></RouterLink>
         </div>
       </div>
 
-      <div class="my-9 h-32 w-screen bg-soft-beige"></div>
+      <div class=""><img class="w-screen lg:hidden" src="/src/assets/images/pubadidas.png" alt="" /></div>
 
       <div>
         <menuu></menuu>
