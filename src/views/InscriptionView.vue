@@ -100,9 +100,9 @@
 
     <div class="mt-10 bg-[url('/public/BackgroundFooter.svg')] bg-cover bg-no-repeat">
       <div class="flex justify-center pt-16">
-        <div class="mx-5"><img src="src/assets/images/facebook.png" alt="" /></div>
-        <div class="mx-5"><img src="src/assets/images/instagram.png" alt="" /></div>
-        <div class="mx-5"><img src="src/assets/images/tiktok.png" alt="" /></div>
+        <div class="mx-5"><img src="../assets/images/facebook.png" alt="" /></div>
+        <div class="mx-5"><img src="../assets/images/instagram.png" alt="" /></div>
+        <div class="mx-5"><img src="../assets/images/tiktok.png" alt="" /></div>
       </div>
       <p class="text-raleway mx-8 mt-8 pb-10 text-center font-thin text-white">
         © Askme. All <RouterLink to="/mentions"><span class="font-bold">rights reserved C.G.U & Mentions légales</span></RouterLink>
