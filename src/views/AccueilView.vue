@@ -144,12 +144,12 @@ export default {
     this.getUserConnect();
     emitter.on("connectUser", (e) => {
       this.user = e.user;
-      console.log("App => Reception user connecté", this.user);
+      //console.log("App => Reception user connecté", this.user);
       this.getUserInfo(this.user);
     });
     emitter.on("deConnectUser", (e) => {
       this.user = e.user;
-      console.log("App => Reception user déconnecté", this.user);
+      //console.log("App => Reception user déconnecté", this.user);
       this.userInfo = null;
       this.name = "Vidéo";
       this.avatar = null;
@@ -208,7 +208,7 @@ export default {
       const q = query(dbUsers, where("uid", "==", user.uid));
       await onSnapshot(q, (snapshot) => {
         this.userInfo = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-        console.log("userInfo", this.userInfo);
+        //console.log("userInfo", this.userInfo);
         // userInfo étant un tableau, onn récupère
         // ses informations dans la 1° cellule du tableau : 0
         this.name = this.userInfo[0].login;

@@ -69,7 +69,7 @@ export default {
     // Montage de la vue
     // Appel de la liste des participants
     this.getParticipants();
-    console.log("id participant", this.$route.params.id);
+    //console.log("id participant", this.$route.params.id);
     this.getParticipant(this.$route.params.id);
   },
   methods: {
