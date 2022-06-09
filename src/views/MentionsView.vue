@@ -29,19 +29,8 @@
         Par téléphone : +00000000 <br />Par email : baptiste.rognon@gmail.com <br />Par courrier : 4 Place Tharradin, 25200 Montbéliard.
       </p>
     </div>
-    <Menuu></Menuu>
+    
   </div>
 </template>
-<script>
-//import { MenuIcon } from "@heroicons/vue/solid";
 
-import Menuu from "../components/Menu.vue";
-
-export default {
-  name: "App",
-  components: {
-    Menuu,
-  },
-};
-</script>
 

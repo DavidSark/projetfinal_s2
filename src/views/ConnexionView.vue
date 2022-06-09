@@ -84,7 +84,7 @@
         <div class="mx-5"><img src="src/assets/images/tiktok.png" alt="" /></div>
       </div>
       <p class="text-raleway mx-8 mt-8 pb-10 text-center font-thin text-white">
-        © Askme. All <span class="font-bold">rights reserved C.G.U & Mentions légales</span>
+        © Askme. All <RouterLink to="/mentions"><span class="font-bold">rights reserved C.G.U & Mentions légales</span></RouterLink>
       </p>
     </div>
   </div>
